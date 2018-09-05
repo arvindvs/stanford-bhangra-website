@@ -1,0 +1,60 @@
+@import "_config.scss";
+
+header {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: $white;
+    color: $darkGrey;
+    height: 60px;
+
+    .logoWrapper {
+        position: absolute;
+        top: 50%; left: 15px;
+        @include translateY(-50%);
+
+        .logo{
+            position: relative;
+        	margin: 0;
+        	height: 40px;
+        	width: 40px;
+            @include transition(.2s ease-in-out);
+
+            &:hover{
+                height: 45px;
+                width: 45px;
+                @include transition(.2s ease-in-out);
+            }
+        }
+    }
+
+    nav,
+    nav ul,
+    nav ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        position: absolute;
+        @include center();
+        //top: 50%; right: 15px;
+        //@include translateY(-50%);
+
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 20px;
+
+            &.last {
+                margin: 0;
+            }
+
+            a {
+                font-size: 15px;
+                line-height: normal;
+                //color: $black;
+            }
+        }
+    }
+}
