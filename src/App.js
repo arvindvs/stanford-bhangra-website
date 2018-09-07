@@ -8,11 +8,12 @@ import {
 // components
 import Header from './components/headerComponent/header'
 //import Footer from './components/footerComponent/footer'
-//import Home from './components/home'
-//import About from './components/about'
-//import Performers  from './components/performers'
-//import Photos from './components/photos'
-//import Contact from './components/contact'
+import Home from './components/sections/home'
+import News from './components/sections/news'
+import About from './components/sections/about'
+//import Performers  from './components/sections/performers'
+//import Media from './components/sections/media'
+//import Contact from './components/sections/contact'
 
 // includes
 import './Assets/css/default.min.css';
@@ -24,6 +25,8 @@ class App extends Component {
         <div className="App">
 
             <Header />
+            <Home />
+            <News />
 
         </div>
         </Router>

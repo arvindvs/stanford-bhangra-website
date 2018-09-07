@@ -1,12 +1,12 @@
 @import "_config.scss";
 
 header {
-    position: relative;
+    position: fixed;
+    z-index: 1;
     display: block;
-    width: 100%;
-    background: $white;
-    color: $darkGrey;
     height: 60px;
+    width: 100%;
+    background: 'transparent';
 
     .logoWrapper {
         position: absolute;
@@ -15,14 +15,14 @@ header {
 
         .logo{
             position: relative;
-        	margin: 0;
+        	margin: 5px;
         	height: 40px;
         	width: 40px;
             @include transition(.2s ease-in-out);
 
             &:hover{
-                height: 45px;
-                width: 45px;
+                height: 46px;
+                width: 46px;
                 @include transition(.2s ease-in-out);
             }
         }
@@ -44,7 +44,7 @@ header {
         ul li {
             list-style-type: none;
             display: inline-block;
-            margin-right: 20px;
+            margin-right: 30px;
 
             &.last {
                 margin: 0;
@@ -53,8 +53,92 @@ header {
             a {
                 font-size: 15px;
                 line-height: normal;
-                //color: $black;
+                position: relative;
+                color: $lightShades;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1.5px;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: $mainColor;
+                    visibility: hidden;
+                    @include scaleX(0);
+                    @include transition(0.3s ease-in-out);
+                }
+
+                &:hover:before {
+                    visibility: visible;
+                    @include scaleX(1);
+                }
+
             }
         }
     }
+}
+
+.container-fluid {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-fluid-light {
+    @extend.container-fluid;
+    background: $lightShades;
+    color: $darkShades;
+}
+
+.container-fluid-dark {
+    @extend.container-fluid;
+    background: $darkShades;
+    color: $lightShades;
+}
+
+.home {
+    @extend.container-fluid;
+    background:  linear-gradient(to bottom, rgba($darkShades, 0.3), rgba($darkShades, 1)), url(../../images/bhangra-background.jpg) no-repeat center center;
+    background-size: cover;
+    color: $lightShades;
+
+    .title {
+        white-space: nowrap;
+        position: absolute;
+        @include center();
+        top: 80%;
+        font-size: 120px;
+        font-weight: 700;
+    }
+}
+
+.news {
+    @extend.container-fluid-dark;
+    height: auto;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    padding-left: 70px;
+    padding-right: 30px;
+
+    .news_bullet {
+        position: relative;
+        margin-bottom: 40px;
+
+        .news_title {
+            position: relative;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .news_body {
+            position: relative;
+            line-height: 1.5;
+        }
+    }
+}
+
+.about {
+    @extend.container-fluid-light;
 }

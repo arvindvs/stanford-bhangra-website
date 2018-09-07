@@ -1,26 +1,49 @@
 /*
 Vars
  */
+
 $black: #010000;
 $white: #ffffff;
 $lightGrey: #e6e6e6;
 $darkGrey: #333;
-$red: #ff1755;
+$red: #8c1515;
+
+/*
+
+$lightShades: #fff;
+$lightAccent: #999;
+$mainColor: #666;
+$darkAccent: #333;
+$darkShades: #000;
+
+$lightShades: #f6f6f5;
+$lightAccent: #e0b095;
+$mainColor: #dd3437;
+$darkAccent: #41cada;
+$darkShades: #1a3e66;
+
+*/
+
+$lightShades: #faf7f9;
+$lightAccent: #cd9657;
+$mainColor: #8c1515;
+$darkAccent: #7c7796;
+$darkShades: #16151c;
 
 /*
 Mix-Ins
  */
 
+ @mixin translateX($e) {
+     -webkit-transform: translateX($e);
+     -moz-transform: translateX($e);
+     transform: translateX($e);
+ }
+
 @mixin translateY($e) {
     -webkit-transform: translateY($e);
     -moz-transform: translateY($e);
     transform: translateY($e);
-}
-
-@mixin translateX($e) {
-    -webkit-transform: translateX($e);
-    -moz-transform: translateX($e);
-    transform: translateX($e);
 }
 
 @mixin translate($e, $f) {
@@ -57,6 +80,12 @@ Mix-Ins
     }
 }
 
+@mixin scaleX($e) {
+    -webkit-transform: scaleX($e);
+    -moz-transform: scaleX($e);
+    transform: scaleX($e);
+}
+
 /* Fonts -
 
 regular 400
@@ -69,20 +98,21 @@ bold 700 Italic
 body {
     font-family: 'Open-Sans', sans-serif;
     font-size: 18px;
-    color: $darkGrey;
     font-weight: 400;
     font-style: normal;
+    color: $darkShades;
 }
 
 a {
     text-decoration: none;
-    color: $darkGrey;
-    @include transition(0.25s ease-in-out);
+    font-weight: 500;
+    color: $lightAccent;
+    @include transition(0.3s ease-in-out);
     cursor: pointer;
 
     &:hover {
         text-decoration: none;
-        color: $red;
-        @include transition(0.25s ease-in-out);
+        color: $mainColor;
+        @include transition(0.3s ease-in-out);
     }
 }

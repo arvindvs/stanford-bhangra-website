@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Headroom from 'react-headroom';
 import {
     Link
 } from 'react-router-dom';
@@ -15,23 +16,22 @@ class Header extends Component {
           <nav>
               <ul>
                   <li className="first">
-                    HOME
+                    <a href="">HOME</a>
                   </li>
                   <li>
-                    ABOUT
+                    <a href="">ABOUT</a>
                   </li>
                   <li>
-                    PERFORMERS
+                    <a href="">PERFORMERS</a>
                   </li>
                   <li>
-                    PHOTOS
+                    <a href="">MEDIA</a>
                   </li>
                   <li className="last">
-                    CONTACT
+                    <a href="">CONTACT</a>
                   </li>
               </ul>
           </nav>
-
 
         </header>
     );
