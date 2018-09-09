@@ -22,6 +22,24 @@ $mainColor: #dd3437;
 $darkAccent: #41cada;
 $darkShades: #1a3e66;
 
+$lightShades: #faf7f9;
+$lightAccent: #cd9657;
+$mainColor: #8c1515;
+$darkAccent: #7c7796;
+$darkShades: #16151c;
+
+$lightShades: #f6f6f6;
+$lightAccent: #5fbbe6;
+$mainColor: #2c7bc6;
+$darkAccent: #83818A;
+$darkShades: #1A3463;
+
+$lightShades: #f4f5f3;
+$lightAccent: #f2923c;
+$mainColor: #df4624;
+$darkAccent: #9b9fb0;
+$darkShades: #2a2532;
+
 */
 
 $lightShades: #faf7f9;
@@ -29,6 +47,7 @@ $lightAccent: #cd9657;
 $mainColor: #8c1515;
 $darkAccent: #7c7796;
 $darkShades: #16151c;
+
 
 /*
 Mix-Ins
@@ -56,6 +75,18 @@ Mix-Ins
     -webkit-transition: $e;
     -moz-transition: $e;
     transition: $e;
+}
+
+@mixin centerX() {
+    position: absolute;
+    left: 50%;
+    @include translateX(-50%);
+}
+
+@mixin centerY() {
+    position: absolute;
+    top: 50%;
+    @include translateY(-50%);
 }
 
 @mixin center($width: null, $height:null) {
@@ -86,6 +117,12 @@ Mix-Ins
     transform: scaleX($e);
 }
 
+@mixin scaleY($e) {
+    -webkit-transform: scaleY($e);
+    -moz-transform: scaleY($e);
+    transform: scaleY($e);
+}
+
 /* Fonts -
 
 regular 400
@@ -107,6 +144,7 @@ a {
     text-decoration: none;
     font-weight: 500;
     color: $lightAccent;
+    background: 'transparent';
     @include transition(0.3s ease-in-out);
     cursor: pointer;
 

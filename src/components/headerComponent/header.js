@@ -3,14 +3,32 @@ import Headroom from 'react-headroom';
 import {
     Link
 } from 'react-router-dom';
+import scrollToComponent from 'react-scroll-to-component';
+
+import Home from '../sections/home';
+import News from '../sections/news';
+import About from '../sections/about';
 
 class Header extends Component {
+    state = {
+        isTop: true
+    };
+
+    componentDidMount() {
+        document.addEventListener('scroll', () => {
+            const isTop = window.scrollY <= 10;
+            if (isTop !== this.state.isTop) {
+                this.setState({ isTop })
+            }
+        });
+    }
+
   render() {
     return (
-        <header>
+        <header className={this.state.isTop ? 'top' : 'not-top'}>
 
           <div className="logoWrapper">
-              <Link to="/"> <img src="/images/logo.png" alt="Logo" className="logo"/> </Link>
+              <Link to=""> <img src="/images/logo.png" alt="Logo" className="logo"/> </Link>
           </div>
 
           <nav>
@@ -19,7 +37,7 @@ class Header extends Component {
                     <a href="">HOME</a>
                   </li>
                   <li>
-                    <a href="">ABOUT</a>
+                    <a href="" onClick={() => scrollToComponent(this.About, { offset: 0, align: 'top', duration: 1500})}>ABOUT</a>
                   </li>
                   <li>
                     <a href="">PERFORMERS</a>

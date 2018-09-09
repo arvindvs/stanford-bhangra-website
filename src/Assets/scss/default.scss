@@ -4,9 +4,10 @@ header {
     position: fixed;
     z-index: 1;
     display: block;
-    height: 60px;
+    height: 50px;
     width: 100%;
-    background: 'transparent';
+    background: $darkShades;
+    @include transition(.2s ease-in-out);
 
     .logoWrapper {
         position: absolute;
@@ -79,6 +80,21 @@ header {
     }
 }
 
+.top {
+    height: 60px;
+    background: 'transparent';
+    @include transition(.2s ease-in-out);
+    nav ul li a {
+        &:before {
+            background-color: $lightShades;
+        }
+
+        &:hover {
+            color: $lightShades;
+        }
+    }
+}
+
 .container-fluid {
     position: relative;
     display: block;
@@ -120,11 +136,12 @@ header {
     padding-top: 10vh;
     padding-bottom: 20vh;
     padding-left: 70px;
-    padding-right: 30px;
+    padding-right: 70px;
 
     .news_bullet {
         position: relative;
         margin-bottom: 40px;
+        max-width: 800px;
 
         .news_title {
             position: relative;
@@ -141,4 +158,77 @@ header {
 
 .about {
     @extend.container-fluid-light;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+
+    .about-container {
+        position: relative;
+        width: 100%;
+        height: inherit;
+
+        .about-left {
+            @include center();
+            text-align: center;
+            line-height: 1.8;
+            font-size: 60px;
+            font-weight: 800;
+        }
+
+        .about-right {
+            @include centerY();
+            padding-right: 150px;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 1.7;
+            color: $darkAccent;
+        }
+    }
+}
+
+.performers {
+    @extend.container-fluid-light;
+
+    .performers-title {
+        @include centerX();
+        top: 60px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .performers-container {
+        position: relative;
+        padding-top: 110px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        //background: rgba(0,0,0,0.5);
+
+        .dancer-container {
+            margin-bottom: 40px;
+            .photo {
+                //height: 300px;
+                width: 15vw;
+                object-fit: contain;
+                margin-bottom: 5px;
+            }
+            .dancer-name {
+                font-size: 20px;
+                font-weight: 400;
+                margin: 0;
+            }
+            .dancer-position {
+                font-weight: 600;
+                color: $mainColor;
+                margin: 0;
+            }
+            .dancer-year {
+                font-weight: 300;
+                color: $darkAccent;
+                margin: 0;
+            }
+        }
+    }
 }

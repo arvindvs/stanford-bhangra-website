@@ -17,7 +17,7 @@ class News extends Component {
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. <br />
+                    deserunt mollit anim id est laborum. <br /> <br />
                     When: September 27th & 28th <br />
                     Where: <a href="https://goo.gl/maps/RP21TRhZwMG2" target="_blank">Arrillaga Family Dining Commons</a>
                 </p>
