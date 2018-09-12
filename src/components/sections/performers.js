@@ -17,9 +17,9 @@ class Performers extends Component {
                     <h1 className="dancer-name">
                         {member.name}
                     </h1>
-                    <p className="dancer-position">
+                    {/*<p className="dancer-position">
                         {member.position}
-                    </p>
+                    </p>*/}
                     <p className="dancer-year">
                         Class of {member.year}
                     </p>

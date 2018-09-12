@@ -14,7 +14,7 @@ import Home from './components/sections/home';
 import News from './components/sections/news';
 import About from './components/sections/about';
 import Performers  from './components/sections/performers';
-import Media from './components/sections/media';
+//import Media from './components/sections/media';
 import Contact from './components/sections/contact';
 
 // includes
@@ -58,9 +58,9 @@ class App extends Component {
                       <li>
                         <button onClick={() => scrollToComponent(this.performersRef, { offset: 0, align: 'top', duration: 800})}>PERFORMERS</button>
                       </li>
-                      <li>
+                      {/*<li>
                         <button onClick={() => scrollToComponent(this.mediaRef, { offset: -45, align: 'top', duration: 800})}>MEDIA</button>
-                      </li>
+                      </li>*/}
                       <li className="last">
                         <button href="">CONTACT</button>
                       </li>
@@ -73,7 +73,7 @@ class App extends Component {
             <News />
             <About ref={(About) => {this.aboutRef = About;}} />
             <Performers ref={(Performers) => {this.performersRef = Performers;}} />
-            <Media ref={(Media) => {this.mediaRef = Media;}} />
+            {/*<Media ref={(Media) => {this.mediaRef = Media;}} />*/}
 
         </div>
         </Router>
