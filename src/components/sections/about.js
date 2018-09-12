@@ -18,12 +18,12 @@ class About extends Component {
 
             <div className="about-container">
                 <p className="about-right">
-                    Our team was founded in ____ and ever since, we've
-                    worked hard to spread the love and joy of bhangra. <br /> <br />
+                    Our team was founded in 1996 and ever since, we've
+                    worked hard to spread the <span className="highlight">love and joy of bhangra </span>. <br /> <br />
                     Bhangra is a traditional dance form originating in Punjab,
-                    India that today, with it's bass-infused beats and high-energy
-                    movements, has spread worldwide. In North America, there
-                    exists a competitive bhangra scene that draws the interests
+                    India that today, with it's <span className="highlight">bass-infused beats and high-energy
+                    movements</span>, has spread worldwide. In North America, there
+                    exists a competitive bhangra scene that draws the interest
                     of countless colleges around the country, in addition to
                     private dance academies and groups.
                 </p>

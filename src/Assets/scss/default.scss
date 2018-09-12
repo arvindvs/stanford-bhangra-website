@@ -51,7 +51,7 @@ header {
                 margin: 0;
             }
 
-            a {
+            a, button {
                 font-size: 15px;
                 line-height: normal;
                 position: relative;
@@ -84,7 +84,7 @@ header {
     height: 60px;
     background: 'transparent';
     @include transition(.2s ease-in-out);
-    nav ul li a {
+    nav ul li a, button {
         &:before {
             background-color: $lightShades;
         }
@@ -93,6 +93,15 @@ header {
             color: $lightShades;
         }
     }
+}
+
+.highlight {
+    color: $lightAccent;
+}
+
+.bold {
+    font-weight: bold;
+    color: $mainColor;
 }
 
 .container-fluid {
@@ -188,23 +197,27 @@ header {
 
 .performers {
     @extend.container-fluid-light;
+    height: auto;
 
     .performers-title {
         @include centerX();
         top: 60px;
         font-size: 25px;
         font-weight: 600;
+        z-index: 1;
     }
 
     .performers-container {
         position: relative;
         padding-top: 110px;
+        margin-left: 50px;
+        margin-right: 50px;
         height: auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
         justify-items: center;
-        //background: rgba(0,0,0,0.5);
+        background: inherit;
 
         .dancer-container {
             margin-bottom: 40px;
@@ -231,4 +244,8 @@ header {
             }
         }
     }
+}
+
+.media {
+    @extend.container-fluid-dark;
 }

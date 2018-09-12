@@ -140,11 +140,14 @@ body {
     color: $darkShades;
 }
 
-a {
+a,button {
+    @extend body;
     text-decoration: none;
     font-weight: 500;
     color: $lightAccent;
     background: 'transparent';
+    border: none;
+    //box-shadow: 0;
     @include transition(0.3s ease-in-out);
     cursor: pointer;
 
@@ -152,5 +155,9 @@ a {
         text-decoration: none;
         color: $mainColor;
         @include transition(0.3s ease-in-out);
+    }
+
+    &:focus {
+        outline: 0;
     }
 }
