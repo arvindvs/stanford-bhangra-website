@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-import Headroom from 'react-headroom';
-import {
-    BrowserRouter as Router,
-    Route,
-    Link
-} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import scrollToComponent from 'react-scroll-to-component';
 
 // components
