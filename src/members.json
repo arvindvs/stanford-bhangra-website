@@ -1,13 +1,6 @@
 {
     "member": [
         {
-            "name": "Amit Kohli",
-            "alt": "amit_kohli",
-            "photo": "/images/members/amit_kohli.PNG",
-            "position": "Captain",
-            "year": "2020"
-        },
-        {
             "name": "Jessica Guo",
             "alt": "jessica_guo",
             "photo": "/images/members/jessica_guo.png",
@@ -20,6 +13,13 @@
             "photo": "/images/members/manisha_rattu.png",
             "position": "Dancer",
             "year": "2019"
+        },
+        {
+            "name": "Amit Kohli",
+            "alt": "amit_kohli",
+            "photo": "/images/members/amit_kohli.PNG",
+            "position": "Captain",
+            "year": "2020"
         },
         {
             "name": "Anima Shrestha",

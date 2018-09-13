@@ -55,11 +55,21 @@ class Header extends Component {
               </nav>
 
             </header>
+
             <Home />
             <News />
             <About />
             <Performers />
             <Media />
+
+            <footer>
+
+                <div className="title">
+                    <h1>Contact</h1>
+                </div>
+
+            </footer>
+
         </div>
     );
   }

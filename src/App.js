@@ -44,7 +44,7 @@ class App extends Component {
             <header className={this.state.isTop ? 'top' : 'not-top'}>
 
               <div className="logoWrapper">
-                  <Link to=""> <img src="/images/logo.png" alt="Logo" className="logo"/> </Link>
+                  <img src="/images/logo.png" onClick={() => scrollToComponent(this.homeRef, { offset: 0, align: 'top', duration: 800})} alt="Logo" className="logo"/>
               </div>
 
               <nav>
@@ -60,9 +60,12 @@ class App extends Component {
                       </li>
                       {/*<li>
                         <button onClick={() => scrollToComponent(this.mediaRef, { offset: -45, align: 'top', duration: 800})}>MEDIA</button>
-                      </li>*/}
+                      </li>
                       <li className="last">
-                        <button href="">CONTACT</button>
+                        <button onClick={() => scrollToComponent(this.contactRef, { offset: -50, align: 'top', duration: 800})}>CONTACT</button>
+                      </li> */}
+                      <li className="last">
+                        <a href="mailto:arvindvs@stanford.edu">CONTACT</a>
                       </li>
                   </ul>
               </nav>
@@ -70,10 +73,30 @@ class App extends Component {
             </header>
 
             <Home ref={(Home) => {this.homeRef = Home;}} />
-            <News />
+            <News ref={(News) => {this.newsRef = News}}/>
             <About ref={(About) => {this.aboutRef = About;}} />
             <Performers ref={(Performers) => {this.performersRef = Performers;}} />
-            {/*<Media ref={(Media) => {this.mediaRef = Media;}} />*/}
+            {/*<Media ref={(Media) => {this.mediaRef = Media;}} />
+            <Contact ref={(Contact) => {this.contactRef = Contact;}} /> */}
+
+            <footer>
+
+                <div className="icons">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/stanfordbhangra/" target="_blank" className="facebook">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/stanfordbhangra/" target="_blank" className="instagram">Instagram</a>
+                        </li>
+                        <li className="last">
+                            <a href="https://www.youtube.com/results?search_query=stanford+bhangra" target="_blank" className="youtube">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+                <p> Copyright © 2018 Stanford Bhangra </p>
+
+            </footer>
 
         </div>
         </Router>

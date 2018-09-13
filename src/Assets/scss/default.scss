@@ -249,3 +249,93 @@ header {
 .media {
     @extend.container-fluid-light;
 }
+
+.contact {
+    @extend.container-fluid-light;
+    height: 50vh;
+}
+
+footer {
+    @extend.container-fluid-dark;
+    height: 100px;
+
+    .icons,
+    .icons ul,
+    .icons ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .icons {
+        position: absolute;
+        @include centerX();
+        top: 25%;
+
+        //top: 50%; right: 15px;
+        //@include translateY(-50%);
+
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 30px;
+
+            &.last {
+                margin-right: 0;
+            }
+
+            a {
+                font-size: 10px;
+                display: block;
+                height:30px;
+                width: 30px;
+
+                overflow:hidden;
+                text-indent:100%;
+                white-space:nowrap;
+                @include transition(.2s ease-in-out);
+
+                &:hover {
+                    @include transition(.2s ease-in-out);
+                }
+            }
+
+            .facebook {
+                background: url('../../images/facebook_icon.png') no-repeat center center;
+                background-size: 30px 30px;
+
+                &:hover {
+                    background: url('../../images/facebook_icon_hover.png') no-repeat center center;
+                    background-size: 30px 30px;
+                }
+            }
+
+            .instagram {
+                background: url('../../images/instagram_icon.png') no-repeat center center;
+                background-size: 30px 30px;
+
+                &:hover {
+                    background: url('../../images/instagram_icon_hover.png') no-repeat center center;
+                    background-size: 30px 30px;
+                }
+            }
+
+            .youtube {
+                background: url('../../images/youtube_icon.png') no-repeat center center;
+                background-size: 30px 30px;
+
+                &:hover {
+                    background: url('../../images/youtube_icon_hover.png') no-repeat center center;
+                    background-size: 30px 30px;
+                }
+            }
+
+        }
+    }
+
+    p {
+        margin: 0;
+        position: absolute;
+        @include centerX();
+        top: 65%;
+    }
+}
