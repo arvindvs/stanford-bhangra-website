@@ -21,7 +21,7 @@ class Performers extends Component {
                         {member.position}
                     </p>*/}
                     <p className="dancer-year">
-                        Class of {member.year}
+                        {member.year}
                     </p>
                 </div>
             )
