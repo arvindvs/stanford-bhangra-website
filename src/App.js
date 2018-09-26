@@ -60,7 +60,7 @@ class App extends Component {
                         <button onClick={() => scrollToComponent(this.contactRef, { offset: -50, align: 'top', duration: 800})}>CONTACT</button>
                       </li> */}
                       <li className="last">
-                        <a href="mailto:arvindvs@stanford.edu">CONTACT</a>
+                        <a href="mailto:stanfordbhangra11@gmail.com">CONTACT</a>
                       </li>
                   </ul>
               </nav>
