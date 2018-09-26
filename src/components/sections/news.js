@@ -27,7 +27,7 @@ class News extends Component {
                     </p>
                     <div className="location">
                         <span className="boldRed">Sunday Session</span><br />
-                        <span className="bold">When</span>: 12:15-2:15pm on Sunday, September 30<br />
+                        <span className="bold">When</span>: 12-2:15pm on Sunday, September 30<br />
                         <span className="bold">Where</span>: <a href="https://goo.gl/maps/3RXLFwjN8sP2" target="_blank">Arrillaga Dining Multipurpose Room</a>
                     </div>
                 </p>
