@@ -8,6 +8,20 @@
             "year": "Master's"
         },
         {
+            "name": "Manesha Ramanathan",
+            "alt": "manesha_ramanathan",
+            "photo": "/images/members/manesha_ramanathan.JPG",
+            "position": "Dancer",
+            "year": "Master's"
+        },
+        {
+            "name": "Preksha Bhagchandani",
+            "alt": "preksha_bhagchandani",
+            "photo": "/images/members/preksha_bhagchandani.jpg",
+            "position": "Dancer",
+            "year": "Medical Student"
+        },
+        {
             "name": "Jessica Guo",
             "alt": "jessica_guo",
             "photo": "/images/members/jessica_guo.jpg",
@@ -50,6 +64,13 @@
             "year": "Class of 2020"
         },
         {
+            "name": "Sahaj Garg",
+            "alt": "sahaj_garg",
+            "photo": "/images/members/sahaj_garg.jpg",
+            "position": "Dancer",
+            "year": "Class of 2020"
+        },
+        {
             "name": "Vikul Gupta",
             "alt": "vikul_gupta",
             "photo": "/images/members/vikul_gupta.jpg",
@@ -74,6 +95,27 @@
             "name": "Arvind Subramanian",
             "alt": "arvind_subramanian",
             "photo": "/images/members/arvind_subramanian.jpg",
+            "position": "Dancer",
+            "year": "Class of 2021"
+        },
+        {
+            "name": "Avi Khemani",
+            "alt": "avi_khemani",
+            "photo": "/images/members/avi_khemani.jpg",
+            "position": "Dancer",
+            "year": "Class of 2021"
+        },
+        {
+            "name": "Harleen Kaur",
+            "alt": "harleen_kaur",
+            "photo": "/images/members/harleen_kaur.jpg",
+            "position": "Dancer",
+            "year": "Class of 2021"
+        },
+        {
+            "name": "Nibha Akireddy",
+            "alt": "nibha_akireddy",
+            "photo": "/images/members/nibha_akireddy.jpg",
             "position": "Dancer",
             "year": "Class of 2021"
         },
@@ -104,6 +146,27 @@
             "photo": "/images/members/surabhi_mundada.jpg",
             "position": "Dancer",
             "year": "Class of 2021"
+        },
+        {
+            "name": "Yearim De Leon",
+            "alt": "yearim_de_leon",
+            "photo": "/images/members/yearim_de_leon.jpg",
+            "position": "Dancer",
+            "year": "Class of 2021"
+        },
+        {
+            "name": "Ayush Agarwal",
+            "alt": "ayush_agarwal",
+            "photo": "/images/members/ayush_agarwal.jpg",
+            "position": "Dancer",
+            "year": "Class of 2022"
+        },
+        {
+            "name": "Rebecca Spencer",
+            "alt": "rebecca_spencer",
+            "photo": "/images/members/rebecca_spencer.jpg",
+            "position": "Dancer",
+            "year": "Class of 2022"
         }
     ]
 }

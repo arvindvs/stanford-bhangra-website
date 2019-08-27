@@ -99,7 +99,7 @@ header {
     color: $lightAccent;
 }
 
-.bold {
+.boldRed {
     font-weight: bold;
     color: $mainColor;
 }
@@ -144,13 +144,13 @@ header {
     height: auto;
     padding-top: 10vh;
     padding-bottom: 20vh;
-    padding-left: 70px;
+    padding-left: 30px;
     padding-right: 70px;
 
     .news_bullet {
         position: relative;
         margin-bottom: 40px;
-        max-width: 800px;
+        max-width: 950px;
 
         .news_title {
             position: relative;
@@ -161,6 +161,35 @@ header {
         .news_body {
             position: relative;
             line-height: 1.5;
+        }
+
+        .news_location {
+            position: relative;
+            line-height: 1.5;
+            display: block;
+
+            .location {
+                display: inline-block;
+                margin-right: 50px;
+
+                a {
+                    color: $lightShades;
+                    @include transition(0.3s ease-in-out);
+                    &:hover{
+                        color: $lightAccent;
+                        @include transition(0.3s ease-in-out);
+                    }
+                }
+
+                .bold {
+                    font-weight: bold;
+                }
+            }
+
+            .locationOr {
+                @extend.location;
+                font-weight: bold;
+            }
         }
     }
 }
