@@ -16,10 +16,9 @@ function Footer() {
                     </li>
                 </ul>
             </div>
-            <p> Copyright © 2018 Stanford Bhangra </p>
+            <p> Copyright © 2019 Stanford Bhangra </p>
         </footer>
     );
 }
 
 export default Footer;
-            
