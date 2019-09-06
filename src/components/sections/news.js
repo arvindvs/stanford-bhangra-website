@@ -39,7 +39,8 @@ class News extends Component {
                 <div className="news_bullet">
                     <div className="video">
                         <YouTube
-                            videoID='v5x1FMxgCg0'
+                            videoId="v5x1FMxgCg0"
+
                         />
                     </div>
                 </div>
