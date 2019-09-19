@@ -7,7 +7,7 @@ class News extends Component {
             <div className="news">
                 <div className="news_bullet">
                     <h1 className="news_title">
-                        Join us for 2019-2020 Tryouts! (updates coming soon)
+                        Join us for 2019-2020 Tryouts! (UPDATED)
                     </h1>
                     <p className = "news_body">
                         Come join our dance family! Tryouts for Stanford Bhangra
@@ -18,21 +18,21 @@ class News extends Component {
                     </p>
                     <p className = "news_location">
                         <div className="location">
-                            {/*<a href="https://goo.gl/maps/3RXLFwjN8sP2" target="_blank"><span className="boldRed">Saturday Session</span></a><br />*/}
-                            <span className="boldRed">Saturday Session</span><br />
-                            <span className="bold">When</span>: Saturday, September 28, Time TBD<br />
-                            {/*<span className="bold">Where</span>: <a href="https://goo.gl/maps/3RXLFwjN8sP2" target="_blank">Location TBD</a>*/}
-                            <span className="bold">Where</span>: Location TBD
+                            <a href="https://goo.gl/maps/M2RyR1qbWLSJocQU8" target="_blank"><span className="boldRed">Saturday Session</span></a><br />
+                            {/*<span className="boldRed">Saturday Session</span><br />*/}
+                            <span className="bold">When</span>: Saturday, September 28, 12:30-2:30 PM<br />
+                            <span className="bold">Where</span>: <a href="https://goo.gl/maps/M2RyR1qbWLSJocQU8" target="_blank">AOERC Room 111</a>
+                            {/*<span className="bold">Where</span>: Location TBD*/}
                         </div>
                         <p className="locationOr">
                         OR
                         </p>
                         <div className="location">
-                            {/*<a href="https://goo.gl/maps/3RXLFwjN8sP2" target="_blank"><span className="boldRed">Sunday Session</span></a><br />*/}
-                            <span className="boldRed">Sunday Session</span><br />
-                            <span className="bold">When</span>: Sunday, September 29, Time TBD<br />
-                            {/*<span className="bold">Where</span>: <a href="https://goo.gl/maps/3RXLFwjN8sP2" target="_blank">Location TBD</a>*/}
-                            <span className="bold">Where</span>: Location TBD
+                            <a href="https://goo.gl/maps/M2RyR1qbWLSJocQU8" target="_blank"><span className="boldRed">Sunday Session</span></a><br />
+                            {/*<span className="boldRed">Sunday Session</span><br />*/}
+                            <span className="bold">When</span>: Sunday, September 29, 2:00-4:00 PM<br />
+                            <span className="bold">Where</span>: <a href="https://goo.gl/maps/M2RyR1qbWLSJocQU8" target="_blank">AOERC Room 111</a>
+                            {/*<span className="bold">Where</span>: Location TBD*/}
                         </div>
                     </p>
                 </div>
